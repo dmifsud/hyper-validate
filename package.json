@@ -1,0 +1,20 @@
+{
+  "name": "hyper-validate",
+  "private": true,
+  "version": "0.0.1",
+  "main": "dist/hyper-validate.cjs.js",
+  "module": "dist/hyper-validate.es.js",
+  "browser": "dist/hyper-validate.iife.js",
+  "types": "dist/main.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.3",
+    "vite": "^5.4.0",
+    "vite-plugin-dts": "^4.0.2"
+  }
+}
