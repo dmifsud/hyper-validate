@@ -13,6 +13,12 @@ export default ({ mode }: { mode: string }) => {
         formats: ['es', 'cjs', 'iife'], // Build formats
         fileName: (format) => `hyper-validate.${format}.js`,
       },
+      rollupOptions: {
+        output: {
+          globals: {},
+          exports: 'default', // Ensure that the export is recognized as a default export
+        },
+      },
       outDir: "dist",
     },
     resolve: {

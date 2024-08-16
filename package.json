@@ -1,7 +1,7 @@
 {
   "name": "hyper-validate",
-  "private": true,
-  "version": "0.0.1",
+  "private": false,
+  "version": "0.0.3",
   "main": "dist/hyper-validate.cjs.js",
   "module": "dist/hyper-validate.es.js",
   "browser": "dist/hyper-validate.iife.js",

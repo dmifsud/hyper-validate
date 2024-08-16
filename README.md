@@ -18,7 +18,7 @@ You can install **HyperValidate** from npm or include it directly in your HTML.
 To install **HyperValidate** as an npm package, run:
 
 ```bash
-npm install hypervalidate
+npm install hyper-validate
 ```
 
 ### Using a Script Tag
@@ -79,6 +79,17 @@ Initializes **HyperValidate** and applies validation to all applicable forms on 
 ### `HyperValidate.applyToHTML(element: HTMLElement)`
 
 Applies **HyperValidate** validation to a specific HTML element. Useful for dynamically added forms.
+
+## Use with HTMX
+
+```typescript
+import htmx from 'htmx.org';
+import HyperValidate from 'hyper-validate';
+
+htmx.onLoad((content: HTMLElement) => {
+    HyperValidate.applyToHTML(content);
+});
+```
 
 ## Contributing
 

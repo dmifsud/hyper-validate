@@ -12,20 +12,22 @@ declare global {
 }
 
 
+// Define the HyperValidate object
+const HyperValidate = {
+  start: function() {
+    applyHyperValidate(document.querySelector('body') as HTMLElement);
+  },
+  applyToHTML: applyHyperValidate
+  // Other methods can be added here
+};
 
 
 (function (global: typeof window | undefined) {
-  // Define the HyperValidate object
-  const HyperValidate = {
-    start: function() {
-      applyHyperValidate(document.querySelector('body') as HTMLElement);
-    },
-    applyToHTML: applyHyperValidate
-    // Other methods can be added here
-  };
 
   // Expose the HyperValidate object globally
   if (global) {
     global.HyperValidate = HyperValidate;
   }
 })(typeof window !== "undefined" ? window : this);
+
+export default HyperValidate;
